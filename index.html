@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cut the Rope - Game Recreation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>Cut the Rope</h1>
+            <div class="score-panel">
+                <div class="stars">
+                    <span class="star" id="star1">☆</span>
+                    <span class="star" id="star2">☆</span>
+                    <span class="star" id="star3">☆</span>
+                </div>
+                <div class="level-info">Level: <span id="level">1</span></div>
+            </div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="controls">
+            <button id="restartBtn">Restart Level</button>
+            <button id="nextBtn" disabled>Next Level</button>
+        </div>
+
+        <div class="instructions">
+            <p>🖱️ Click and drag across ropes to cut them</p>
+            <p>🍬 Feed the candy to Om Nom</p>
+            <p>⭐ Collect all stars for bonus points!</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
